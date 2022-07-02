@@ -2,7 +2,29 @@
     background-color: hsl(30, 38%, 92%);
 }
 .container {
+    display: flex;
+    flex-direction: column;;
     border: solid 5px red;
     border-radius: 25%;
     background-color: white;
 }
+h1 {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    background-color: white;
+    font-family: 'Fraunces', serif;
+}
+p {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    background-color: white;
+    font-family: 'Fraunces', serif;
+    color: #3d8168;
+}
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
