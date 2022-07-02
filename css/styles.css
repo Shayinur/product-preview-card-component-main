@@ -1,0 +1,8 @@
+* {
+    background-color: hsl(30, 38%, 92%);
+}
+.container {
+    border: solid 5px red;
+    border-radius: 25%;
+    background-color: white;
+}
