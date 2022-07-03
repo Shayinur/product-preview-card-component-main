@@ -4,31 +4,37 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     border: none;
-    border-radius: 10px;
-    margin: 20px 10px;
+    border-radius:10px;
+    margin: 20px;
 }
+
+.img-child{
+    display: flex;
+    flex-direction: column;
+}
+
 .img_mobile {
     border-radius: 10px 10px 0 0;
+}
+.img_desktop {
+    display:none;
 }
 
 h1 {
     color: #aaabb1;
     letter-spacing: 5px;
-    background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     margin: 20px;
 }
 h2 {
     font-size: 35px;
-    background-color: white;
     font-family: 'Fraunces', serif;
-    margin: 20px;
+    margin: 10px 20px;
 }
 p {
-    background-color: white;
     color: #87878c;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -40,15 +46,13 @@ p {
     margin: 0;
 }
 h3 {
-    background-color: white;
     font-family: 'Fraunces', serif;
-    color: #3d8168;
+    color: hsl(158, 36%, 37%);
     font-size: 35px;
     margin: 0;
     padding: 20px;
 }
 h4 {
-    background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #aaabb1;
@@ -61,12 +65,44 @@ h4 {
 }
 button {
     color:white;
-    background-color: #3d8168;
+    background-color: hsl(158, 36%, 37%);
     font-family: 'Montserrat', sans-serif;
     border: none;
     border-radius: 10px;
-    margin: 0 10px 20px 10px;
-    padding: 10px;
+    padding: 15px 10px;
+    width: 90%;
+    margin: 0 0 20px 20px;
    
 }
+@media (min-width:1440px) {
+    
+    .container {
+        flex-direction: row;
+        margin: 400px;
+    }
+    .img_mobile {
+        display: none;
+    }
+    .img_desktop {
+        display: flex;
+        border-radius: 10px 0 0 10px;
+    
+    }
+    .img-child{
+        width: 50%;
+        height: auto;
+    }
+    .text-child {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    button {
+        margin: 0 20px;
+        width: 90%;
+    }
+    button:active {
+        background-color: hsl(159, 36%, 22%);
+    }
 
+}
