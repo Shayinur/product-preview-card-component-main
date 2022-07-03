@@ -1,6 +1,9 @@
 body {
     background-color: hsl(30, 38%, 92%);
 }
+main {
+    display: flex;
+}
 .container {
     display: flex;
     flex-direction: column;
