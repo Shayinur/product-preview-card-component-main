@@ -1,9 +1,7 @@
 body {
     background-color: hsl(30, 38%, 92%);
 }
-main {
-    display: flex;
-}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -45,7 +43,7 @@ p {
 }
 .price {
     display:inline-flex;
-    flex-wrap: wrap;
+    align-items: center;
     margin: 0;
 }
 h3 {
@@ -77,17 +75,18 @@ button {
     margin: 0 0 20px 20px;
    
 }
-@media (min-width:1440px) {
+@media (min-width:765px) {
     
     .container {
         flex-direction: row;
+        width: 30rem;
         margin: 400px;
     }
     .img_mobile {
         display: none;
     }
     .img_desktop {
-        display: flex;
+        display:flex;
         border-radius: 10px 0 0 10px;
     
     }
@@ -97,7 +96,6 @@ button {
     }
     .text-child {
         flex-direction: column;
-        flex-wrap: wrap;
         padding: 0;
     }
     button {
